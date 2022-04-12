@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Infrastructure\bin\Release\netcoreapp3.1\Daffodill.Infrastructure.deps.json
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Infrastructure\bin\Release\netcoreapp3.1\Daffodill.Infrastructure.runtimeconfig.json
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Infrastructure\bin\Release\netcoreapp3.1\Daffodill.Infrastructure.runtimeconfig.dev.json
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Infrastructure\bin\Release\netcoreapp3.1\Daffodill.Infrastructure.dll
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Infrastructure\bin\Release\netcoreapp3.1\Daffodill.Infrastructure.pdb
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Infrastructure\bin\Release\netcoreapp3.1\Daffodill.Domain.dll
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Infrastructure\bin\Release\netcoreapp3.1\Daffodill.Domain.pdb
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Infrastructure\obj\Release\netcoreapp3.1\Daffodill.Infrastructure.csprojAssemblyReference.cache
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Infrastructure\obj\Release\netcoreapp3.1\Daffodill.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Infrastructure\obj\Release\netcoreapp3.1\Daffodill.Infrastructure.AssemblyInfo.cs
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Infrastructure\obj\Release\netcoreapp3.1\Daffodill.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Infrastructure\obj\Release\netcoreapp3.1\Daffodill.Infrastructure.csproj.CopyComplete
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Infrastructure\obj\Release\netcoreapp3.1\Daffodill.Infrastructure.dll
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Infrastructure\obj\Release\netcoreapp3.1\Daffodill.Infrastructure.pdb
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Infrastructure\obj\Release\netcoreapp3.1\Daffodill.Infrastructure.genruntimeconfig.cache

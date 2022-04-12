@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Application\bin\Debug\netcoreapp3.1\Daffodill.Application.deps.json
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Application\bin\Debug\netcoreapp3.1\Daffodill.Application.dll
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Application\bin\Debug\netcoreapp3.1\Daffodill.Application.pdb
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Application\obj\Debug\netcoreapp3.1\Daffodill.Application.csprojAssemblyReference.cache
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Application\obj\Debug\netcoreapp3.1\Daffodill.Application.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Application\obj\Debug\netcoreapp3.1\Daffodill.Application.AssemblyInfo.cs
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Application\obj\Debug\netcoreapp3.1\Daffodill.Application.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Application\obj\Debug\netcoreapp3.1\Daffodill.Application.dll
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Application\obj\Debug\netcoreapp3.1\Daffodill.Application.pdb
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Application\bin\Debug\netcoreapp3.1\Daffodill.Domain.dll
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Application\bin\Debug\netcoreapp3.1\Daffodill.Domain.pdb
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Application\obj\Debug\netcoreapp3.1\Daffodill.Application.csproj.CopyComplete

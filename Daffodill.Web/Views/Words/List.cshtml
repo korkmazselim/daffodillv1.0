@@ -1,0 +1,42 @@
+﻿@model Daffodill.Application.ListWordsView
+
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+
+    <div class="col-sm-6">
+        @if (Model.CurrentPage > 1)
+        {
+            <a class="page-link" asp-controller="Words" asp-action="List" asp-route-Page="@(@Model.CurrentPage - 1)">Previous</a>
+        }
+    </div>
+    <div class="col-sm-6">
+        @if (Model.CurrentPage <= Model.PageCount)
+        {
+            <a class="page-link" asp-controller="Words" asp-action="List" asp-route-Page="@(@Model.CurrentPage + 1)">Next</a>
+        }
+    </div>
+</div>
+<br />
+<table class="table">
+    <tbody>
+        @foreach (var item in Model.Words)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.English)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+        }
+
+
+    </tbody>
+</table>

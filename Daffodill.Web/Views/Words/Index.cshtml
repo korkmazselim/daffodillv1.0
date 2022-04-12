@@ -1,0 +1,81 @@
+﻿@model Daffodill.Domain.Words
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-sm-6">
+        <form asp-controller="Words" asp-action="Index" method="post">
+            <div class="form-group row">
+                <div class="col-md-10">
+                    <label for="exampleInputEmail1">Word</label>
+                    <input type="text" class="form-control form-control-sm" name="Words.English" id="wordInput" placeholder="Enter Word">
+
+
+                </div>
+                <div class="col-md-2">
+                    <label>&nbsp;</label>
+                    <button class="btn btn-sm btn-outline-secondary form-control form-control-sm" id="searchBtn" name="searchBtn" type="button">Go</button>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-12">
+                    <label for="exampleInputEmail1">Word Note</label>
+                    <input type="text" class="form-control form-control-sm" id="wordInput" name="Words.WordNote" placeholder="Enter Word Note">
+                </div>
+            </div>
+            <hr />
+
+
+            @for (int i = 0; i < 5; i++)
+            {
+
+        <div class="form-group row">
+            <div class="col-lg-12">
+                <p><b>@(@i + 1). Meaning</b></p>
+            </div>
+            <div class="col-sm-12">
+                <input type="text" class="form-control form-control-sm" name="Words.WordsMeanings[@i].Meaning" placeholder="Enter @(@i + 1). Meaning">
+            </div>
+        </div>
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control form-control-sm" name="Words.WordsMeanings[@i].Description" placeholder="Enter @(@i + 1). Meaning  Description">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    @for (int j = 0; j < 5; j++)
+                    {
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">@(@j + 1). Exp.</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-control-sm" name="Words.WordsMeanings[@i].WordsExamples[@j].Example" id="inputEmail3">
+                        </div>
+                    }
+                    <div class="col-md-12">
+                        <hr />
+                    </div>
+
+                </div>
+            }
+            <input type="submit" value="save" onclick="return confirm('Are you sure?')" />
+        </form>
+    </div>
+    <div class="col-sm-6">
+        <iframe style="position:fixed" src="https://dictionary.cambridge.org/dictionary/english/welcome" id="cambrideIframe" width="800" height="800"></iframe>
+
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+        document.getElementById("searchBtn").addEventListener("click", () =>
+        {
+            var val = document.getElementById("wordInput").value;
+            document.getElementById('cambrideIframe').src = "https://dictionary.cambridge.org/dictionary/english/" + val;
+        });
+
+        
+    </script>
+}
+
