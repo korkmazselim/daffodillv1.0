@@ -26,13 +26,21 @@
         @foreach (var item in Model.Words)
         {
         <tr>
+            @*<td>
+                <b><i>@Html.DisplayFor(modelItem => item.CreatedDate)</i></b>
+            </td>*@
             <td>
-                @Html.DisplayFor(modelItem => item.English)
+                <b><i>@Html.ActionLink(item.English,"Details",new { id = item.Id})</i></b>
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                <i>@Html.DisplayFor(modelitem => item.WordsMeanings.FirstOrDefault().Meaning)</i>
+            </td>
+            <td>
+                @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+                <a href="Details/@item.Id" class="link-info">More Info</a><br />
+                <a href="Edit/@item.Id" class="link-secondary">Edit</a>
             </td>
         </tr>
         }

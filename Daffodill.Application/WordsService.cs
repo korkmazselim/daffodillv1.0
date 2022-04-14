@@ -51,11 +51,20 @@ namespace Daffodill.Application
             Random random = new Random();
             var rowCount = Repository.Queryable().Count();
             var randomNumber = random.Next(1, rowCount);
-            var searchResult = Repository.Queryable().Skip(randomNumber).Take(1).Include(x=>x.WordsMeanings).Include("WordsMeanings.WordsExamples").FirstOrDefault();
+            var searchResult = WordsBaseQuery().Skip(randomNumber).Take(1).Include(x=>x.WordsMeanings).Include("WordsMeanings.WordsExamples").FirstOrDefault();
             searchResult.ViewCount++;
             searchResult.LastViewedDate = DateTime.Now;
             _DbContext.SaveChanges();
             return searchResult;
+        }
+
+        public Words GetWordById(int id)
+        {
+            return WordsBaseQuery().Where(x => x.Id == id).FirstOrDefault();
+        }
+        public IQueryable<Words> WordsBaseQuery() 
+        {
+            return Repository.Queryable().Include(x => x.WordsMeanings).Include("WordsMeanings.WordsExamples");
         }
 
         public ListWordsView GetWords(int PageNumber)
@@ -64,7 +73,7 @@ namespace Daffodill.Application
             int perPage = 20;
             _ListWordsView.CurrentPage = PageNumber;
             var count = (int)(Repository.Queryable().Count() / perPage);
-            var Result = Repository.Queryable().Skip(((PageNumber - 1 )* perPage)).Take(perPage).OrderBy(x=>x.Id).ToList();
+            var Result = WordsBaseQuery().Skip(((PageNumber - 1 )* perPage)).Take(perPage).OrderBy(x=>x.Id).ToList();
             _ListWordsView.Words = Result;
             _ListWordsView.PageCount = count;
             return _ListWordsView;

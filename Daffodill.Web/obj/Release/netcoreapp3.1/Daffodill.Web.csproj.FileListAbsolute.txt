@@ -449,3 +449,5 @@ C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Web
 C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Web\obj\Release\netcoreapp3.1\Daffodill.Web.dll
 C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Web\obj\Release\netcoreapp3.1\Daffodill.Web.pdb
 C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Web\obj\Release\netcoreapp3.1\Daffodill.Web.genruntimeconfig.cache
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Web\obj\Release\netcoreapp3.1\Razor\Views\Shared\_WordDetailsPartialView.cshtml.g.cs
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Web\obj\Release\netcoreapp3.1\Razor\Views\Words\Details.cshtml.g.cs

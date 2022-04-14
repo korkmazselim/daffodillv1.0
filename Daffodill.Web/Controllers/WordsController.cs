@@ -36,7 +36,12 @@ namespace Daffodill.Web.Controllers
             var result = _WordsService.CreateNewWord(words);
             return View();
         }
-
+        public IActionResult Details(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+                return View();
+            return View(_WordsService.GetWordById(Convert.ToInt32(id)));
+        }
         public ActionResult List(string Page)
         {
             if (Page == null)
@@ -44,7 +49,11 @@ namespace Daffodill.Web.Controllers
             var view = _WordsService.GetWords(Convert.ToInt32(Page));
             return View(view);
         }
-
+        [Authorize]
+        public ActionResult Edit(string id)
+        {
+            return View();
+        }
         public ActionResult GetRandom()
         {
             var result = _WordsService.GetRandomWord();

@@ -1,0 +1,8 @@
+﻿@model Daffodill.Domain.Words
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@await Html.PartialAsync("_WordDetailsPartialView", Model)
