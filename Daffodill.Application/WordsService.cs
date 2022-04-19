@@ -78,6 +78,14 @@ namespace Daffodill.Application
             _ListWordsView.PageCount = count;
             return _ListWordsView;
         }
+
+        public ListWordsView GetWordsBySearchKey(string SearchKey)
+        {
+            ListWordsView listWordsView = new ListWordsView();
+            var result = WordsBaseQuery().Where(x => x.English.Contains(SearchKey)).ToList();
+            listWordsView.Words = result;
+            return listWordsView;
+        }
     }
     public class ListWordsView
     {

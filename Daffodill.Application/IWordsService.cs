@@ -13,6 +13,7 @@ namespace Daffodill.Application
         Words GetRandomWord();
         Words GetWordById(int id);
         IQueryable<Words> WordsBaseQuery();
+        ListWordsView GetWordsBySearchKey(string SearchKey);
 
     }
 }

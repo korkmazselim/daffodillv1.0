@@ -49,6 +49,19 @@ namespace Daffodill.Web.Controllers
             var view = _WordsService.GetWords(Convert.ToInt32(Page));
             return View(view);
         }
+        [HttpPost]
+        public IActionResult SearchList(string Key)
+        {
+            if (!string.IsNullOrEmpty(Key))
+            {
+                var getDataView = _WordsService.GetWordsBySearchKey(Key);
+                return View("List",getDataView);
+            }
+            else
+            {
+                return View("List",_WordsService.GetWords(1));
+            }
+        }
         [Authorize]
         public ActionResult Edit(string id)
         {

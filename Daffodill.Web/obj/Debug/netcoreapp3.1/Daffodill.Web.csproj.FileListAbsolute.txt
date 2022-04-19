@@ -449,3 +449,5 @@ C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Web
 C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Web\bin\Debug\netcoreapp3.1\Daffodill.Application.pdb
 C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Web\obj\Debug\netcoreapp3.1\Razor\Views\Words\List.cshtml.g.cs
 C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Web\obj\Debug\netcoreapp3.1\Razor\Views\Words\GetRandom.cshtml.g.cs
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_WordDetailsPartialView.cshtml.g.cs
+C:\Users\user\source\repos\DailyPractice\LeetCode_All-In\Daffodill\Daffodill.Web\obj\Debug\netcoreapp3.1\Razor\Views\Words\Details.cshtml.g.cs
